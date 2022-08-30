@@ -1,4 +1,12 @@
 services:
+
+############Not using postgres due to M1 chip compatability.#######
+#    db:
+#        image: postgres
+#        environment:
+#            - POSTGRES_DB=postgres
+#            - POSTGRES_USER=postgres
+#            - POSTGRES_PASSWORD=postgres
     web:
         build: .
         command: python manage.py runserver 0.0.0.0:8000
@@ -6,3 +14,5 @@ services:
             - .:/code
         ports:
             - "8000:8000"
+#        depends_on:
+#            - db

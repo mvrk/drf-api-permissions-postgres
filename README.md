@@ -1,7 +1,8 @@
-# LAB-31 Django REST Framework
+# LAB-32 Django REST Framework
+Base on previous lab, add auth functionality and prostgres database into the project.
 
 ## project: 
-drf-api
+drf-api-auth-postgres
 ## Author: 
 Rui Guo
 ## setup
